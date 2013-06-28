@@ -10,3 +10,7 @@ ln -s $HOME/.dotfiles/ctags/ctags ~/.ctags
 # gemrc
 ln -s $HOME/.dotfiles/ruby/gemrc ~/.gemrc
 
+# git
+ln -s $HOME/.dotfiles/git/gitignore ~/.gitignore
+ln -s $HOME/.dotfiles/git/gitconfig ~/.gitconfig
+
