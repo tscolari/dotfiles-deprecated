@@ -21,3 +21,9 @@ ln -s $HOME/.dotfiles/git/gitconfig ~/.gitconfig
 ln -s $HOME/.dotfiles/zsh/prezto ~/.prezto
 ln -s $HOME/.dotfiles/zsh/zshrc ~/.zshrc
 ln -s $HOME/.dotfiles/zsh/prezto-override/zpreztorc ~/.zpreztorc
+
+# chrome
+/bin/bash $HOME/.dotfiles/install.sh
+
+# tmux
+ln -s $HOME/.dotfiles/tmux/tmux.conf
