@@ -27,3 +27,7 @@ ln -s $HOME/.dotfiles/zsh/prezto-override/zpreztorc ~/.zpreztorc
 
 # tmux
 ln -s $HOME/.dotfiles/tmux/tmux.conf
+
+# vimify
+ln -s $HOME/.dotfiles/vimify/inputrc ~/.inputrc
+ln -s $HOME/.dotfiles/vimify/editrc  ~/.editrc
