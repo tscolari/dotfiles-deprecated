@@ -7,8 +7,10 @@ ln -s $HOME/.vim/vimrc ~/.vimrc
 # ctags
 ln -s $HOME/.dotfiles/ctags/ctags ~/.ctags
 
-# gemrc
+# ruby
 ln -s $HOME/.dotfiles/ruby/gemrc ~/.gemrc
+ln -s $HOME/.dotfiles/ruby/pryrc ~/.pryrc
+ln -s $HOME/.dotfiles/ruby/aprc  ~/.aprc
 
 # git
 ln -s $HOME/.dotfiles/git/gitignore ~/.gitignore
