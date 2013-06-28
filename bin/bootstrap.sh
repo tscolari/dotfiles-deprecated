@@ -14,3 +14,8 @@ ln -s $HOME/.dotfiles/ruby/gemrc ~/.gemrc
 ln -s $HOME/.dotfiles/git/gitignore ~/.gitignore
 ln -s $HOME/.dotfiles/git/gitconfig ~/.gitconfig
 
+
+# zsh
+ln -s $HOME/.dotfiles/zsh/prezto ~/.prezto
+ln -s $HOME/.dotfiles/zsh/zshrc ~/.zshrc
+ln -s $HOME/.dotfiles/zsh/prezto-override/zpreztorc ~/.zpreztorc
