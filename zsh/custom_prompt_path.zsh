@@ -1,3 +1,3 @@
 autoload promptinit
-fpath=($HOME/.dotfiles/zsh/themes $HOME/.zsh.prompts $fpath)
+fpath=($HOME/.dotfiles/zsh/prezto-themes $HOME/.zsh.prompts $fpath)
 promptinit
