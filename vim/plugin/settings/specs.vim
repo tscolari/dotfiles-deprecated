@@ -23,3 +23,11 @@ nnoremap <silent> ,rxit :call ChangePendingRspecToXit()<cr>
 
 " insert a before { } block around a line
 nnoremap <silent> \bf ^ibefore { <esc>$a }
+
+" ============================
+" vim-ruby-conque
+" ============================
+" ,r to run the current file
+nmap <silent> ,r <Plug>SendTestToTmux
+" ,R to run the current line
+nmap <silent> ,R <Plug>SendFocusedTestToTmux

@@ -124,15 +124,6 @@ nmap <c-A> :Tabularize /
 vmap <c-A> :Tabularize /
 
 " ============================
-" vim-ruby-conque
+" notes file
 " ============================
-" Cmd-Shift-R for RSpec
-nmap <silent> ,r :call RunRspecCurrentFileConque()<CR>
-" Cmd-Shift-L for RSpec Current Line
-nmap <silent> ,R :call RunRspecCurrentLineConque()<CR>
-" ,Cmd-R for Last conque command
-nmap <silent> ,rl :call RunLastConqueCommand()<CR>
-
-
-
-
+map <Leader>cn :e ~/Desktio/Dropbox/notes/coding-notes.txt<cr>

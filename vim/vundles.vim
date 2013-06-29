@@ -20,7 +20,6 @@ Bundle "gmarik/vundle"
 
 " Ruby, Rails, Rake...
 Bundle "ecomba/vim-ruby-refactoring"
-Bundle "skwp/vim-ruby-conque"
 Bundle "tpope/vim-rails.git"
 Bundle "tpope/vim-rake.git"
 Bundle "tpope/vim-rvm.git"
@@ -123,9 +122,10 @@ Bundle "bogado/file-line.git"
 Bundle "tpope/vim-rvm.git"
 Bundle "nelstrom/vim-visual-star-search"
 
-" Customization
+" Tmux
 Bundle "christoomey/vim-tmux-navigator"
 Bundle "tpope/vim-dispatch"
+Bundle "jgdavey/vim-turbux"
 
 " The plugins listed in ~/.vim/.vundles.local will be added here to
 " allow the user to add vim plugins to yadr without the need for a fork.

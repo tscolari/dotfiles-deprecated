@@ -8,6 +8,11 @@ alias psr='ps aux | grep ruby'
 # Moving around
 alias cdb='cd -'
 
+# tmux
+alias tx='tmux'
+alias txa='tmux attach -t'
+alias txn='tmux new -s'
+
 # Bundler
 alias be="bundle exec"
 alias bes="bundle exec spec"
