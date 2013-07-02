@@ -126,4 +126,5 @@ vmap <c-A> :Tabularize /
 " ============================
 " notes file
 " ============================
-map <Leader>cn :e ~/Desktio/Dropbox/notes/coding-notes.txt<cr>
+map <Leader>nn :sp ~/Desktop/Dropbox/notes/programming-notes.txt<cr>
+map <Leader>td :sp ~/Desktop/Dropbox/notes/todo.txt<cr>

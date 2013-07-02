@@ -1,4 +1,4 @@
-colorscheme railscasts
+colorscheme zenburn
 
 if has("gui_running")
   "tell the term has 256 colors
