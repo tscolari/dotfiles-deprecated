@@ -121,8 +121,8 @@ nmap <silent> // :nohlsearch<CR>
 " Tabularize - alignment
 " ============================
 " Hit Cmd-Shift-A then type a character you want to align by
-nmap <c-A> :Tabularize /
-vmap <c-A> :Tabularize /
+nmap <leader>a :Tabularize /
+vmap <leader>a :Tabularize /
 
 " ============================
 " notes file

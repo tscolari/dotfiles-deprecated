@@ -17,7 +17,7 @@ set showcmd                     "Show incomplete cmds down the bottom
 set showmode                    "Show current mode down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
 set visualbell                  "No sounds
-set autoread                    "Reload files changed outside vim
+set laststatus=2                "Show status line without needing to split
 
 " This makes vim act like all other editors, buffers can
 " exist in the background without being in a window.
@@ -26,6 +26,9 @@ set hidden
 
 "turn on syntax highlighting
 syntax on
+
+" reloads the file if changed
+set autoread
 
 " Change leader to a comma because the backslash is too far away
 " That means all \x commands turn into ,x
