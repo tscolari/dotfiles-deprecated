@@ -30,6 +30,7 @@ Bundle "ck3g/vim-change-hash-syntax"
 " Other languages
 Bundle "briancollins/vim-jst"
 Bundle "pangloss/vim-javascript"
+Bundle "jnwhiteh/vim-golang"
 
 " Html, Xml, Css, Markdown...
 Bundle "aaronjensen/vim-sass-status.git"
@@ -98,6 +99,7 @@ Bundle "vim-scripts/AutoTag.git"
 Bundle "vim-scripts/lastpos.vim"
 Bundle "vim-scripts/sudo.vim"
 Bundle "xsunsmile/showmarks.git"
+Bundle "https://gist.github.com/6007705.git"
 
 " Text objects
 Bundle "austintaylor/vim-indentobject"

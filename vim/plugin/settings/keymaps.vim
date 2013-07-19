@@ -14,6 +14,9 @@ nnoremap ,ow "_diwhp
 "make Y consistent with C and D
 nnoremap Y y$
 
+" crlt+c to copy to system clipboard
+vmap <c-C> "*y
+
 " =========================================
 " Surrondings
 " =========================================
@@ -124,8 +127,19 @@ nmap <silent> // :nohlsearch<CR>
 nmap <leader>a :Tabularize /
 vmap <leader>a :Tabularize /
 
+
 " ============================
 " notes file
 " ============================
 map <Leader>nn :sp ~/Desktop/Dropbox/notes/programming-notes.txt<cr>
 map <Leader>td :sp ~/Desktop/Dropbox/notes/todo.txt<cr>
+
+nnoremap <silent> ,c :set cursorline! cursorcolumn!<CR><esc>
+
+" ============================
+" rcodetools
+" ============================
+nmap <buffer> <c-L> <Plug>(xmpfilter-run)
+xmap <buffer> <c-L> <Plug>(xmpfilter-run)
+nmap <buffer> <c-l> <Plug>(xmpfilter-mark)
+xmap <buffer> <c-l> <Plug>(xmpfilter-mark)
