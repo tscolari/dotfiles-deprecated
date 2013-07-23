@@ -31,6 +31,7 @@ Bundle "ck3g/vim-change-hash-syntax"
 Bundle "briancollins/vim-jst"
 Bundle "pangloss/vim-javascript"
 Bundle "jnwhiteh/vim-golang"
+Bundle "elixir-lang/vim-elixir"
 
 " Html, Xml, Css, Markdown...
 Bundle "aaronjensen/vim-sass-status.git"
