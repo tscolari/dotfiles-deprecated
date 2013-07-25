@@ -31,9 +31,6 @@ done
 ln -nfs $HOME/.dotfiles/zsh/prezto-override/zpreztorc ~/.zpreztorc
 chsh -s /bin/zsh
 
-# chrome
-/bin/bash $HOME/.dotfiles/chrome/install.sh
-
 # tmux
 ln -s $HOME/.dotfiles/tmux/tmux.conf ~/.tmux.conf
 
