@@ -13,3 +13,5 @@ fi
 for config_file ($HOME/.dotfiles/zsh/*.zsh) source $config_file
 
 # Customize to your needs...
+#
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
