@@ -31,3 +31,11 @@ nnoremap <silent> \bf ^ibefore { <esc>$a }
 nmap <silent> ,r <Plug>SendTestToTmux
 " ,R to run the current line
 nmap <silent> ,R <Plug>SendFocusedTestToTmux
+
+" Rspec.vim mappings
+" map <Leader>R  :call RunCurrentSpecFile()<CR>
+" map <Leader>rr :call RunNearestSpec()<CR>
+" map <Leader>rl :call RunLastSpec()<CR>
+" map <Leader>ra :call RunAllSpecs()<CR>
+" 
+" let g:rspec_command = "Dispatch rspec {spec}"

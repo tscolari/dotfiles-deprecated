@@ -62,9 +62,9 @@ Bundle "AndrewRadev/splitjoin.vim"
 Bundle "Raimondi/delimitMate"
 Bundle "Shougo/neocomplcache.git"
 Bundle "briandoll/change-inside-surroundings.vim.git"
-Bundle "garbas/vim-snipmate.git"
-Bundle "godlygeek/tabular"
+Bundle "garbas/vim-snipmate"
 Bundle "honza/vim-snippets"
+Bundle "godlygeek/tabular"
 Bundle "nelstrom/vim-visual-star-search"
 Bundle "skwp/vim-easymotion"
 Bundle "tomtom/tcomment_vim.git"
@@ -125,6 +125,9 @@ Bundle "slim-template/vim-slim.git"
 Bundle "bogado/file-line.git"
 Bundle "tpope/vim-rvm.git"
 Bundle "nelstrom/vim-visual-star-search"
+
+" Test
+" Bundle \"thoughtbot/vim-rspec"
 
 " Tmux
 Bundle "christoomey/vim-tmux-navigator"
