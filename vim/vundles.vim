@@ -127,12 +127,14 @@ Bundle "tpope/vim-rvm.git"
 Bundle "nelstrom/vim-visual-star-search"
 
 " Test
-" Bundle \"thoughtbot/vim-rspec"
+Bundle "thoughtbot/vim-rspec"
 
 " Tmux
 Bundle "christoomey/vim-tmux-navigator"
 Bundle "tpope/vim-dispatch"
-Bundle "jgdavey/vim-turbux"
+"Bundle \"benmills/vimux"
+"Bundle \"jgdavey/tslime.vim"
+"Bundle \"jgdavey/vim-turbux"
 
 " The plugins listed in ~/.vim/.vundles.local will be added here to
 " allow the user to add vim plugins to yadr without the need for a fork.

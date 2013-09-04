@@ -28,14 +28,20 @@ nnoremap <silent> \bf ^ibefore { <esc>$a }
 " vim-ruby-conque
 " ============================
 " ,r to run the current file
-nmap <silent> ,r <Plug>SendTestToTmux
-" ,R to run the current line
-nmap <silent> ,R <Plug>SendFocusedTestToTmux
+" nmap <silent> ,r <Plug>SendTestToTmux
+" " ,R to run the current line
+" nmap <silent> ,R <Plug>SendFocusedTestToTmux
 
 " Rspec.vim mappings
-" map <Leader>R  :call RunCurrentSpecFile()<CR>
-" map <Leader>rr :call RunNearestSpec()<CR>
-" map <Leader>rl :call RunLastSpec()<CR>
-" map <Leader>ra :call RunAllSpecs()<CR>
-" 
-" let g:rspec_command = "Dispatch rspec {spec}"
+map <Leader>R  :call RunCurrentSpecFile()<CR>
+map <Leader>rr :call RunNearestSpec()<CR>
+map <Leader>rl :call RunLastSpec()<CR>
+map <Leader>ra :call RunAllSpecs()<CR>
+
+if executable('spec')
+  let rspec_executable = "spec"
+else
+  let rspec_executable = "rspec"
+endif
+
+let g:rspec_command = "Dispatch " . rspec_executable . " {spec}"
