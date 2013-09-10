@@ -1,5 +1,5 @@
 "colorscheme zenburn
-colorscheme pacific
+colorscheme lettuce
 
 if has("gui_running")
   "tell the term has 256 colors
