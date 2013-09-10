@@ -119,4 +119,10 @@
   path = .gitconfig.user
 [user]
 	name = Tiago Scolari
-	email = tscolari@gmail.com
+	email = tscolari@housetrip.com
+[pivotal-tracker]
+	token = d621fa2e959ecd8e675405e466f05c81
+[github]
+	user = tscolari
+[heroku]
+	account = tscolari
