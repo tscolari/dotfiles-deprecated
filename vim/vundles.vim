@@ -34,7 +34,6 @@ Bundle "jnwhiteh/vim-golang"
 Bundle "elixir-lang/vim-elixir"
 
 " Html, Xml, Css, Markdown...
-Bundle "aaronjensen/vim-sass-status.git"
 Bundle "claco/jasmine.vim"
 Bundle "digitaltoad/vim-jade.git"
 Bundle "groenewege/vim-less.git"
@@ -119,7 +118,7 @@ Bundle "vim-scripts/argtextobj.vim"
 " Cosmetics, color scheme, Powerline...
 Bundle "chrisbra/color_highlight.git"
 Bundle "vim-scripts/TagHighlight.git"
-Bundle "Lokaltog/vim-powerline"
+Bundle "bling/vim-airline.git"
 Bundle "itspriddle/vim-jquery.git"
 Bundle "slim-template/vim-slim.git"
 Bundle "bogado/file-line.git"
