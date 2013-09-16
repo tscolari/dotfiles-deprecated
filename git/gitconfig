@@ -120,8 +120,6 @@
 [user]
 	name = Tiago Scolari
 	email = tscolari@housetrip.com
-[pivotal-tracker]
-	token = d621fa2e959ecd8e675405e466f05c81
 [github]
 	user = tscolari
 [heroku]
