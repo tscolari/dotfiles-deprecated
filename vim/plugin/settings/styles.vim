@@ -1,5 +1,5 @@
 "colorscheme zenburn
-colorscheme lettuce
+colorscheme xoria256
 
 if has("gui_running")
   "tell the term has 256 colors
