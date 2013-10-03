@@ -40,7 +40,6 @@ Bundle "groenewege/vim-less.git"
 Bundle "itspriddle/vim-jquery.git"
 Bundle "jtratner/vim-flavored-markdown.git"
 Bundle "kchmck/vim-coffee-script"
-Bundle "kogakure/vim-sparkup.git"
 Bundle "nelstrom/vim-markdown-preview"
 Bundle "skwp/vim-html-escape"
 Bundle "slim-template/vim-slim.git"
@@ -54,6 +53,7 @@ Bundle "mattn/gist-vim"
 Bundle "skwp/vim-git-grep-rails-partial"
 Bundle "tjennings/git-grep-vim"
 Bundle "tpope/vim-fugitive"
+Bundle 'airblade/vim-gitgutter'
 Bundle "tpope/vim-git"
 
 " General text editing improvements...
