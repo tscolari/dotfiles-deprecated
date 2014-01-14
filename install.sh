@@ -21,6 +21,9 @@ ln -s $HOME/.dotfiles/git/gitconfig ~/.gitconfig
 ln -s $HOME/.dotfiles/zsh/prezto ~/.zprezto
 ln -s $HOME/.dotfiles/zsh/zshrc ~/.zshrc
 
+# postgres
+ln -s $HOME/.dotfiles/psqlrc ~/.psqlrc
+
 RUNCONS=$(ls $HOME/.dotfiles/zsh/prezto/runcoms/z*)
 for runcon in $RUNCONS
 do

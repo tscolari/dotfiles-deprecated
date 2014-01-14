@@ -53,7 +53,6 @@ Bundle "mattn/gist-vim"
 Bundle "skwp/vim-git-grep-rails-partial"
 Bundle "tjennings/git-grep-vim"
 Bundle "tpope/vim-fugitive"
-Bundle 'airblade/vim-gitgutter'
 Bundle "tpope/vim-git"
 
 " General text editing improvements...
