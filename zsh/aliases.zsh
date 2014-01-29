@@ -12,6 +12,7 @@ alias cdb='cd -'
 alias tx='tmux'
 alias txa='tmux attach -t'
 alias txn='tmux new -s'
+alias txs='tmux switch -t'
 
 # Bundler
 alias be="bundle exec"
