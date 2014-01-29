@@ -125,3 +125,7 @@ let g:Powerline_symbols = 'fancy'
 " =============== Misc
 
 autocmd BufWritePre * :%s/\s\+$//e " Removes unwanted spaces befeore save
+
+" Open new split panes to right and bottom, which feels more natural
+set splitbelow
+set splitright
