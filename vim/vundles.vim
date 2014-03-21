@@ -116,6 +116,7 @@ Bundle "vim-scripts/argtextobj.vim"
 
 " Cosmetics, color scheme, Powerline...
 Bundle "chrisbra/color_highlight.git"
+Bundle "flazz/vim-colorschemes"
 Bundle "vim-scripts/TagHighlight.git"
 Bundle "jonathanfilip/vim-lucius.git"
 Bundle "bling/vim-airline.git"
