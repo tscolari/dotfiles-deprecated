@@ -1,7 +1,6 @@
 "colorscheme zenburn
 
 colorscheme lucius
-LuciusDarkHighContrast
 
 if has("gui_running")
   "tell the term has 256 colors
