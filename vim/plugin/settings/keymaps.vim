@@ -60,9 +60,9 @@ vmap ,{ c{<C-R>"}<ESC>
 "Go to last edit location with ,.
 nnoremap ,. '.
 
-" ,q to toggle quickfix window (where you have stuff like GitGrep)
-" ,oq to open it back up (rare)
-nmap <silent> ,qc :CloseSingleConque<CR>:cclose<CR>
+" ,q to toggle quickfix window (where you have stuff like Ag)
+" " ,oq to open it back up (rare)
+nmap <silent> ,qc :cclose<CR>
 nmap <silent> ,qo :copen<CR>
 
 "Move back and forth through previous and next buffers
