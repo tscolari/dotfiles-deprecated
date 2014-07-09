@@ -1,6 +1,7 @@
 "colorscheme zenburn
+"colorscheme lucius
 
-colorscheme lucius
+colorscheme elisex-ruby
 
 if has("gui_running")
   "tell the term has 256 colors
@@ -19,3 +20,11 @@ else
   "dont load csapprox if we no gui support - silences an annoying warning
   let g:CSApprox_loaded = 1
 endif
+
+nmap <C-S-P> :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+  if !exists("*synstack")
+    return
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
