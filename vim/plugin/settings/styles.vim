@@ -1,7 +1,10 @@
 "colorscheme zenburn
 "colorscheme lucius
+"colorscheme elisex-ruby
+colorscheme jellybeans
+"colorscheme railscasts
 
-colorscheme elisex-ruby
+set background=dark
 
 if has("gui_running")
   "tell the term has 256 colors

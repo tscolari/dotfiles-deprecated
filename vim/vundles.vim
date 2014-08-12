@@ -30,7 +30,8 @@ Bundle "ck3g/vim-change-hash-syntax"
 " Other languages
 Bundle "briancollins/vim-jst"
 Bundle "pangloss/vim-javascript"
-Bundle "jnwhiteh/vim-golang"
+"Bundle "jnwhiteh/vim-golang"
+Bundle "fatih/vim-go"
 Bundle "elixir-lang/vim-elixir"
 
 " Html, Xml, Css, Markdown...
@@ -88,6 +89,7 @@ Bundle "skwp/greplace.vim"
 Bundle "skwp/vim-conque"
 Bundle "tomtom/tlib_vim.git"
 Bundle "tpope/vim-abolish"
+Bundle "airblade/vim-gitgutter"
 Bundle "tpope/vim-endwise.git"
 Bundle "tpope/vim-ragtag"
 Bundle "tpope/vim-repeat.git"
@@ -115,6 +117,8 @@ Bundle "thinca/vim-textobj-function-javascript"
 Bundle "vim-scripts/argtextobj.vim"
 
 " Cosmetics, color scheme, Powerline...
+Bundle 'chriskempson/base16-vim'
+Bundle "godlygeek/csapprox"
 Bundle "chrisbra/color_highlight.git"
 Bundle "flazz/vim-colorschemes"
 Bundle "tscolari/elisex-ruby.vim"
