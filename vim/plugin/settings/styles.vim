@@ -1,8 +1,9 @@
 "colorscheme zenburn
 "colorscheme lucius
 "colorscheme elisex-ruby
-colorscheme jellybeans
+"colorscheme jellybeans
 "colorscheme railscasts
+colorscheme sorcerer
 
 set background=dark
 
