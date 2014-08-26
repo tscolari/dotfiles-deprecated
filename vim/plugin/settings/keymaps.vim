@@ -131,8 +131,8 @@ vmap <leader>a :Tabularize /
 " ============================
 " notes file
 " ============================
-map <Leader>nn :sp ~/Desktop/Dropbox/notes/programming-notes.txt<cr>
-map <Leader>td :sp ~/Desktop/Dropbox/notes/todo.txt<cr>
+map <Leader>nn :sp ~/Google\ Drive/notes/programming-notes.txt<cr>
+map <Leader>td :sp ~/Google\ Drive/notes/todo.txt<cr>
 
 nnoremap <silent> ,c :set cursorline! cursorcolumn!<CR><esc>
 

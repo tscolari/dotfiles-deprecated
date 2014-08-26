@@ -127,7 +127,6 @@ let g:Powerline_symbols = 'fancy'
 autocmd BufWritePre * :%s/\s\+$//e " Removes unwanted spaces befeore save
 
 " Trying to fix text curruption on vim:
-let loaded_matchparen = 1 " Fixes glitches on iterm2
 set encoding=utf-8
 set list listchars=tab:\ \ ,trail:·
 
