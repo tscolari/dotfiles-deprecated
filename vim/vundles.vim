@@ -30,9 +30,10 @@ Bundle "ck3g/vim-change-hash-syntax"
 " Other languages
 Bundle "briancollins/vim-jst"
 Bundle "pangloss/vim-javascript"
-"Bundle "jnwhiteh/vim-golang"
 Bundle "fatih/vim-go"
 Bundle "elixir-lang/vim-elixir"
+Bundle "jstemmer/gotags"
+Bundle 'honza/dockerfile.vim'
 
 " Html, Xml, Css, Markdown...
 Bundle "claco/jasmine.vim"
@@ -47,6 +48,13 @@ Bundle "slim-template/vim-slim.git"
 Bundle "timcharper/textile.vim.git"
 Bundle "tpope/vim-haml"
 Bundle "wavded/vim-stylus"
+Bundle "leshill/vim-json"
+Bundle "cakebaker/scss-syntax.vim"
+Bundle "hail2u/vim-css3-syntax"
+
+" MetaVim
+Bundle "ynkdir/vim-vimlparser"
+Bundle "syngan/vim-vimlint"
 
 " Git related...
 Bundle "gregsexton/gitv"
@@ -83,6 +91,7 @@ Bundle "mattn/webapi-vim.git"
 Bundle "rking/ag.vim"
 Bundle "scrooloose/nerdtree.git"
 Bundle "scrooloose/syntastic.git"
+Bundle "Matt-Deacalion/vim-systemd-syntax"
 Bundle "sjl/gundo.vim"
 Bundle "skwp/YankRing.vim"
 Bundle "skwp/greplace.vim"
@@ -103,8 +112,9 @@ Bundle "xsunsmile/showmarks.git"
 Bundle "https://gist.github.com/6007705.git"
 
 " Text objects
-Bundle "austintaylor/vim-indentobject"
 Bundle "bootleq/vim-textobj-rubysymbol"
+Bundle "nelstrom/vim-textobj-rubyblock"
+Bundle "austintaylor/vim-indentobject"
 Bundle "coderifous/textobj-word-column.vim"
 Bundle "kana/vim-textobj-datetime"
 Bundle "kana/vim-textobj-entire"
@@ -112,24 +122,16 @@ Bundle "kana/vim-textobj-function"
 Bundle "kana/vim-textobj-user"
 Bundle "lucapette/vim-textobj-underscore"
 Bundle "nathanaelkane/vim-indent-guides"
-Bundle "nelstrom/vim-textobj-rubyblock"
 Bundle "thinca/vim-textobj-function-javascript"
 Bundle "vim-scripts/argtextobj.vim"
 
 " Cosmetics, color scheme, Powerline...
-Bundle 'chriskempson/base16-vim'
 Bundle "godlygeek/csapprox"
 Bundle "chrisbra/color_highlight.git"
-Bundle "flazz/vim-colorschemes"
-Bundle "tscolari/elisex-ruby.vim"
 Bundle "vim-scripts/TagHighlight.git"
-Bundle "jonathanfilip/vim-lucius.git"
-" Bundle \"itchyny/lightline.vim"
-Bundle "itspriddle/vim-jquery.git"
-Bundle "slim-template/vim-slim.git"
-Bundle "bogado/file-line.git"
-Bundle "tpope/vim-rvm.git"
-Bundle "nelstrom/vim-visual-star-search"
+Bundle "bling/vim-airline"
+Bundle "dolio/vim-hybrid"
+Bundle 'chriskempson/base16-vim'
 
 " Test
 Bundle "thoughtbot/vim-rspec"
@@ -137,9 +139,6 @@ Bundle "thoughtbot/vim-rspec"
 " Tmux
 Bundle "christoomey/vim-tmux-navigator"
 Bundle "tpope/vim-dispatch"
-"Bundle \"benmills/vimux"
-"Bundle \"jgdavey/tslime.vim"
-"Bundle \"jgdavey/vim-turbux"
 
 " The plugins listed in ~/.vim/.vundles.local will be added here to
 " allow the user to add vim plugins to yadr without the need for a fork.
