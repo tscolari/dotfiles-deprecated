@@ -20,6 +20,7 @@ let g:ctrlp_use_caching = 0
 " it interferes with YankRing (paste, then hit ctrl-p)
 let g:ctrlp_map = ',t'
 nnoremap <silent> ,t :CtrlP<CR>
+nnoremap <silent> <C-p> :ccl<cr>:CtrlPBuffer<cr>
 
 " Additional mapping for buffer search
 nnoremap <silent> ,b :ccl<cr>:CtrlPBuffer<cr>

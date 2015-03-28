@@ -4,6 +4,8 @@ let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:go_snippet_engine = "snipmate"
 
+nnoremap <silent> ,g :GoTest<CR>
+
 function! golang#generate_project()
   call system('find . -iname "*.go" > /tmp/gotags-filelist-project')
   let gopath = substitute(system('go env GOPATH'), '\n', '', '')
