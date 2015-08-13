@@ -2,3 +2,4 @@
 export PATH=$HOME/.dotfiles/bin:$PATH
 export PATH=$HOME/.rvm/bin:$PATH
 export PATH=$HOME/bin:$PATH
+export PATH=$GOPATH/bin:$PATH

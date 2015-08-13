@@ -15,3 +15,16 @@ for config_file ($HOME/.dotfiles/zsh/*.zsh) source $config_file
 # Customize to your needs...
 #
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+export DOCKER_HOST=tcp://192.168.59.104:2376
+
+# The next line updates PATH for the Google Cloud SDK.
+#source '/Users/tscolari/Library/GoogleCloudSDK/google-cloud-sdk/path.bash.inc'
+
+PATH=/usr/local/bin:$PATH:~/Library/GoogleCloudSDK/google-cloud-sdk/bin
+
+# The next line enables bash completion for gcloud.
+#source '/Users/tscolari/Library/GoogleCloudSDK/google-cloud-sdk/completion.bash.inc'
+
+$(boot2docker shellinit 2> /dev/null)
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
