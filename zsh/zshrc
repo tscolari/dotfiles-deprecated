@@ -25,6 +25,11 @@ PATH=/usr/local/bin:$PATH:~/Library/GoogleCloudSDK/google-cloud-sdk/bin
 
 # The next line enables bash completion for gcloud.
 #source '/Users/tscolari/Library/GoogleCloudSDK/google-cloud-sdk/completion.bash.inc'
+#
+export FLEETCTL_ENDPOINT=http://172.17.8.101:4001
+export KUBERNETES_MASTER=http://172.17.8.101:8080
 
 $(boot2docker shellinit 2> /dev/null)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+eval "$(direnv hook zsh)"
