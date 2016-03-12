@@ -9,6 +9,7 @@ function main {
 	install_zsh
 	install_git
 	install_ctags
+	install_psql
 }
 
 function fetch_submodules {
@@ -43,6 +44,11 @@ function install_ctags {
 	brew install ctags || sudo apt-get install exuberant-ctags
 	rm -rf $HOME/.ctags
 	ln -s $DOTFILES_FOLDER/ctags/ctags $HOME/.ctags
+}
+
+function install_psql {
+	rm -rf $HOME/.psqlrc
+	ln -s $DOTFILES_FOLDER/psqlrc $HOME/.psqlrc
 }
 
 main
