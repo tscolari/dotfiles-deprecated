@@ -8,6 +8,7 @@ function main {
 
 	install_zsh
 	install_git
+	install_ctags
 }
 
 function fetch_submodules {
@@ -36,6 +37,12 @@ function install_git {
 	rm -rf $HOME/.gitignore
 	ln -s $DOTFILES_FOLDER/git/gitconfig $HOME/.gitconfig
 	ln -s $DOTFILES_FOLDER/git/gitignore $HOME/.gitignore
+}
+
+function install_ctags {
+	brew install ctags || sudo apt-get install exuberant-ctags
+	rm -rf $HOME/.ctags
+	ln -s $DOTFILES_FOLDER/ctags/ctags $HOME/.ctags
 }
 
 main
