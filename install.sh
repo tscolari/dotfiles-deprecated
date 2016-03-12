@@ -7,6 +7,7 @@ function main {
 	fetch_submodules
 
 	install_zsh
+	install_git
 }
 
 function fetch_submodules {
@@ -28,6 +29,13 @@ function install_zsh {
 	ln -s $DOTFILES_FOLDER/zsh/zshrc $HOME/.zshrc
 	ln -s $DOTFILES_FOLDER/zsh/zpreztorc $HOME/.zpreztorc
 	ln -s $DOTFILES_FOLDER/zsh/prezto $HOME/.zprezto
+}
+
+function install_git {
+	rm -rf $HOME/.gitconfig
+	rm -rf $HOME/.gitignore
+	ln -s $DOTFILES_FOLDER/git/gitconfig $HOME/.gitconfig
+	ln -s $DOTFILES_FOLDER/git/gitignore $HOME/.gitignore
 }
 
 main
