@@ -10,6 +10,7 @@ function main {
 	install_git
 	install_ctags
 	install_psql
+	install_ruby
 }
 
 function fetch_submodules {
@@ -49,6 +50,13 @@ function install_ctags {
 function install_psql {
 	rm -rf $HOME/.psqlrc
 	ln -s $DOTFILES_FOLDER/psqlrc $HOME/.psqlrc
+}
+
+function install_ruby {
+	rm -rf $HOME/.gemrc
+	rm -rf $HOME/.pryrc
+	ln -s $DOTFILES_FOLDER/ruby/gemrc $HOME/.gemrc
+	ln -s $DOTFILES_FOLDER/ruby/pryrc $HOME/.pryc
 }
 
 main
