@@ -14,3 +14,5 @@ for config_file in $(ls $HOME/.dotfiles/zsh/*.zsh)
 do
   source $config_file
 done
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
