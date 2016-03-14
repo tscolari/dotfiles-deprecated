@@ -10,26 +10,19 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-for config_file ($HOME/.dotfiles/zsh/*.zsh) source $config_file
+for config_file in $(ls $HOME/.dotfiles/zsh/*.zsh)
+do
+  source $config_file
+done
 
 # Customize to your needs...
-#
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
-export DOCKER_HOST=tcp://192.168.59.104:2376
-
-# The next line updates PATH for the Google Cloud SDK.
-#source '/Users/tscolari/Library/GoogleCloudSDK/google-cloud-sdk/path.bash.inc'
-
-PATH=/usr/local/bin:$PATH:~/Library/GoogleCloudSDK/google-cloud-sdk/bin
-
-# The next line enables bash completion for gcloud.
-#source '/Users/tscolari/Library/GoogleCloudSDK/google-cloud-sdk/completion.bash.inc'
-#
-export FLEETCTL_ENDPOINT=http://172.17.8.101:4001
-export KUBERNETES_MASTER=http://172.17.8.101:8080
-
-$(boot2docker shellinit 2> /dev/null)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+unalias run-help
+autoload run-help
+HELPDIR=/usr/local/share/zsh/help
 
 eval "$(direnv hook zsh)"
