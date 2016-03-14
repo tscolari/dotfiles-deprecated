@@ -11,6 +11,7 @@ function main {
 	install_ctags
 	install_psql
 	install_ruby
+	install_inputrc
 }
 
 function fetch_submodules {
@@ -57,6 +58,13 @@ function install_ruby {
 	rm -rf $HOME/.pryrc
 	ln -s $DOTFILES_FOLDER/ruby/gemrc $HOME/.gemrc
 	ln -s $DOTFILES_FOLDER/ruby/pryrc $HOME/.pryc
+}
+
+function install_inputrc {
+	rm -rf $HOME/.inputrc
+	rm -rf $HOME/.editrc
+	ln -s $DOTFILES_FOLDER/vimify/inputrc $HOME/.inputc
+	ln -s $DOTFILES_FOLDER/vimify/editrc $HOME/.editrc
 }
 
 main
