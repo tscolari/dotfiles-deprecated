@@ -12,6 +12,7 @@ function main {
 	install_psql
 	install_ruby
 	install_inputrc
+	install_tmux
 }
 
 function fetch_submodules {
@@ -57,14 +58,21 @@ function install_ruby {
 	rm -rf $HOME/.gemrc
 	rm -rf $HOME/.pryrc
 	ln -s $DOTFILES_FOLDER/ruby/gemrc $HOME/.gemrc
-	ln -s $DOTFILES_FOLDER/ruby/pryrc $HOME/.pryc
+	ln -s $DOTFILES_FOLDER/ruby/pryrc $HOME/.pryrc
 }
 
 function install_inputrc {
 	rm -rf $HOME/.inputrc
 	rm -rf $HOME/.editrc
-	ln -s $DOTFILES_FOLDER/vimify/inputrc $HOME/.inputc
+	ln -s $DOTFILES_FOLDER/vimify/inputrc $HOME/.inputrc
 	ln -s $DOTFILES_FOLDER/vimify/editrc $HOME/.editrc
+}
+
+function install_tmux {
+	rm -rf $HOME/.tmux.conf
+	rm -rf $HOME/.tmux
+	ln -s $DOTFILES_FOLDER/tmux $HOME/.tmux
+	ln -s $HOME/.tmux/tmux.conf $HOME/.tmux.conf
 }
 
 main
