@@ -29,6 +29,8 @@ alias -g N="| /dev/null"
 alias -g S='| sort'
 alias -g G='| grep' # now you can do: ls foo G something
 
+alias vim="nvim"
+
 # Functions
 #
 # (f)ind by (n)ame

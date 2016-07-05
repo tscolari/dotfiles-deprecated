@@ -15,7 +15,8 @@ do
   source $config_file
 done
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+#export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
+source $(rvm 2.3 do rvm env --path)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
