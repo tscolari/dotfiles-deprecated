@@ -13,6 +13,7 @@ function main {
 	install_ruby
 	install_inputrc
 	install_tmux
+	install_vimlocal
 }
 
 function fetch_submodules {
@@ -73,6 +74,11 @@ function install_tmux {
 	rm -rf $HOME/.tmux
 	ln -s $DOTFILES_FOLDER/tmux $HOME/.tmux
 	ln -s $HOME/.tmux/tmux.conf $HOME/.tmux.conf
+}
+
+function install_vimlocal {
+	rm -rf $HOME/.vimrc.local
+	ln -s $DOTFILES_FOLDER/vim/vimrc.local $HOME/.vimrc.local
 }
 
 main

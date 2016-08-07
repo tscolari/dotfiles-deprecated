@@ -1,0 +1,38 @@
+" ---------------------
+" Backups
+" ---------------------
+set noswapfile
+set nobackup
+set nowb
+
+" ---------------------
+" Mappings
+" ---------------------
+nnoremap <silent> <bs> <c-w>h
+
+" Create window splits easier. The default
+" way is Ctrl-w,v and Ctrl-w,s. I remap
+" this to vv and ss
+nnoremap <silent> vv <C-w>v
+nnoremap <silent> ss <C-w>s
+
+"Clear current search highlight by double tapping //
+nmap <silent> // :nohlsearch<CR>
+
+vmap <c-C> "*y
+
+" ---------------------
+" Spelling
+" ---------------------
+iab requrie require
+iab emtpy empty
+iab emtpy? empty?
+iab intereset interest
+iab proeprty property
+
+setlocal spelllang=en_us
+
+autocmd BufRead,BufNewFile *.md setlocal spell
+autocmd BufRead,BufNewFile *.rdoc setlocal spell
+autocmd BufRead,BufNewFile *.markdown setlocal spell
+autocmd FileType gitcommit setlocal spell
