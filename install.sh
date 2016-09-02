@@ -45,7 +45,7 @@ function install_git {
 }
 
 function install_ctags {
-	brew install ctags || sudo apt-get install exuberant-ctags
+	brew install ctags || sudo apt-get install exuberant-ctags || sudo emerge ctags
 	rm -rf $HOME/.ctags
 	ln -s $DOTFILES_FOLDER/ctags/ctags $HOME/.ctags
 }
