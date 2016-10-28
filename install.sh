@@ -14,6 +14,7 @@ function main {
 	install_inputrc
 	install_tmux
 	install_vimlocal
+	install_tools
 }
 
 function fetch_submodules {
@@ -79,6 +80,11 @@ function install_tmux {
 function install_vimlocal {
 	rm -rf $HOME/.vimrc.local
 	ln -s $DOTFILES_FOLDER/vim/vimrc.local $HOME/.vimrc.local
+}
+
+function install_tools {
+	brew install the_silver_searcher || sudo emerge the_silver_searcher
+	brew install tree || sudo emerge tree
 }
 
 main
