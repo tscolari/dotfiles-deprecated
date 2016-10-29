@@ -1,0 +1,2 @@
+>=sys-libs/libseccomp-2.3.0 static-libs
+app-emulation/docker btrfs aufs

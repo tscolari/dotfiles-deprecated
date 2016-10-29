@@ -1,0 +1,2 @@
+app-emulation/virtualbox headless
+>=dev-libs/libpcre-8.38-r1 pcre16
