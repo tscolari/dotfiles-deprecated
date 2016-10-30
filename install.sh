@@ -84,7 +84,12 @@ function install_vimlocal {
 
 function install_tools {
 	brew install the_silver_searcher || sudo emerge the_silver_searcher
-	brew install tree || sudo emerge tree
+	brew install tree || sudo emerge app-text/tree
+	brew install htop || sudo emerge htop
+	brew install jq || sudo emerge jq
+	brew install direnv || sudo emerge direnv
+	brew install tig || sudo emerge tig
+	brew install ack || sudo emerge ack
 }
 
 main
