@@ -17,6 +17,7 @@
 
   # branch
   b = branch -v                     # branch (verbose)
+  br = branch
 
   # commit
   c = commit -m                     # commit with message
@@ -38,10 +39,15 @@
 
   # log
   l = log --graph --date=short
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
   short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
   changelog = log --pretty=format:\" * %s\"
   shortnocolor = log --pretty=format:\"%h %cr %cn %s\"
+
+  # duet
+  dci = duet-commit --verbose
+  dca = duet-commit --amend --reset-author --verbose
 
   # pull
   pl = pull                         # pull
