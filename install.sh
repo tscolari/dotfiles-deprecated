@@ -120,7 +120,6 @@ function apt_get_stuff {
 }
 
 function install_zsh {
-	echo "BLA"
 	runcoms_folder=$DOTFILES_FOLDER/zsh/prezto/runcoms
 	for file in $(ls $runcoms_folder/z*)
 	do
@@ -147,6 +146,12 @@ function install_git {
 function install_psql {
 	rm -rf $HOME/.psqlrc
 	ln -s $DOTFILES_FOLDER/psqlrc $HOME/.psqlrc
+
+	sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main" > "/etc/apt/sources.list.d/pgdg.list"'
+	wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | \
+	  sudo apt-key add -
+	sudo apt update
+	sudo apt install -y postgresql-9.4 libpq-dev
 }
 
 function install_ruby {
