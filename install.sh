@@ -3,25 +3,124 @@
 cd $(dirname $0)
 DOTFILES_FOLDER=$(pwd)
 
+PPAS="
+  ppa:git-core/ppa
+  ppa:neovim-ppa/stable
+  ppa:fkrull/deadsnakes
+  ppa:pi-rho/dev
+  ppa:tmate.io/archive
+  ppa:aacebedo/fasd
+  ppa:noobslab/themes
+  ppa:noobslab/icons
+"
+
+PACKAGES="
+  build-essential
+  openssl
+  silversearcher-ag
+  git
+  neovim
+  exuberant-ctags
+  python3.6
+  ruby
+  python3-pip
+  docker.io
+  tmux-next
+  vim
+  tree
+  curl
+  tmate
+  ack-grep
+  direnv
+  tig
+  jq
+  xclip
+  xsel
+  fasd
+  virtualbox
+  virtualbox-guest-additions-iso
+  virtualbox-guest-utils
+  gnome-tweak-tool
+  hfsprogs
+  libcurl4-openssl-dev
+  libxml2
+  libssl-dev
+  libxml2-dev
+  pinentry-curses
+  cmake
+  flatabulous-theme
+  ultra-flat-icons
+  clipit
+  zsh
+"
+
+GO_BINS="
+  github.com/git-duet/git-duet/...
+  github.com/jmhodges/jsonpp
+"
+
 function main {
 	fetch_submodules
 
+	pre_apt_get
+	add_ppas
+	apt_get_stuff
+
+	install_go
 	install_zsh
 	install_git
-	install_ctags
 	install_psql
 	install_ruby
 	install_inputrc
 	install_tmux
 	install_vimlocal
-	install_tools
 }
 
 function fetch_submodules {
 	git submodule update --init --recursive
 }
 
+function install_go {
+  (
+    cd /tmp
+    wget https://godeb.s3.amazonaws.com/godeb-amd64.tar.gz
+    tar xzf godeb-amd64.tar.gz
+    ./godeb install || true
+  )
+}
+
+function install_go_bins {
+  for gobin in $GO_BINS
+  do
+    go get $gobin
+  done
+}
+
+function pre_apt_get {
+  sudo apt-get update
+  sudo apt-get install -y \
+     software-properties-common \
+     ca-certificates
+}
+
+function add_ppas {
+  for ppa in $PPAS
+  do
+    sudo add-apt-repository -y $ppa
+  done
+  sudo apt-get update
+}
+
+function apt_get_stuff {
+  echo $PACKAGES
+  for package in "$PACKAGES"
+  do
+    sudo apt-get install -y $package
+  done
+}
+
 function install_zsh {
+	echo "BLA"
 	runcoms_folder=$DOTFILES_FOLDER/zsh/prezto/runcoms
 	for file in $(ls $runcoms_folder/z*)
 	do
@@ -43,12 +142,6 @@ function install_git {
 	rm -rf $HOME/.gitignore
 	ln -s $DOTFILES_FOLDER/git/gitconfig $HOME/.gitconfig
 	ln -s $DOTFILES_FOLDER/git/gitignore $HOME/.gitignore
-}
-
-function install_ctags {
-	brew install ctags || sudo apt-get install exuberant-ctags || sudo emerge ctags
-	rm -rf $HOME/.ctags
-	ln -s $DOTFILES_FOLDER/ctags/ctags $HOME/.ctags
 }
 
 function install_psql {
@@ -80,16 +173,6 @@ function install_tmux {
 function install_vimlocal {
 	rm -rf $HOME/.vimrc.local
 	ln -s $DOTFILES_FOLDER/vim/vimrc.local $HOME/.vimrc.local
-}
-
-function install_tools {
-	brew install the_silver_searcher || sudo emerge the_silver_searcher
-	brew install tree || sudo emerge app-text/tree
-	brew install htop || sudo emerge htop
-	brew install jq || sudo emerge jq
-	brew install direnv || sudo emerge direnv
-	brew install tig || sudo emerge tig
-	brew install ack || sudo emerge ack
 }
 
 main

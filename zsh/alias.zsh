@@ -11,7 +11,7 @@ alias txs='tmux switch -t'
 # Show human friendly numbers and colors
 alias df='df -h'
 alias ll='ls -alGh'
-alias ls='ls -Gh'
+alias ls='ls -h --color'
 alias du='du -h -d 2'
 
 # Rspec
