@@ -159,7 +159,7 @@ function install_psql {
 	wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | \
 	  sudo apt-key add -
 	sudo apt update
-	sudo apt install -y postgresql-9.4 libpq-dev
+	sudo apt install -y postgresql-9.6 libpq-dev postgresql-contrib-9.6
 }
 
 function install_ruby {
