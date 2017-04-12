@@ -15,42 +15,50 @@ PPAS="
 "
 
 PACKAGES="
+  ack-grep
   build-essential
-  openssl
-  silversearcher-ag
-  git
-  neovim
+  clipit
+  cmake
+  curl
+  direnv
+  docker.io
   exuberant-ctags
+  fasd
+  flatabulous-theme
+  git
+  gnome-tweak-tool
+  hfsprogs
+  jq
+  libcurl4-openssl-dev
+  libffi-dev
+  libreadline-dev
+  libsqlite3-dev
+  libssl-dev
+  libxml2
+  libxml2-dev
+  libxslt1-dev
+  libyaml-dev
+  neovim
+  nodejs
+  openssl
+  pinentry-curses
+  python3-pip
   python3.6
   ruby
-  python3-pip
-  docker.io
-  tmux-next
-  vim
-  tree
-  curl
-  tmate
-  ack-grep
-  direnv
+  silversearcher-ag
+  sqlite3
   tig
-  jq
-  xclip
-  xsel
-  fasd
+  tmate
+  tmux-next
+  tree
+  ultra-flat-icons
+  vim
   virtualbox
   virtualbox-guest-additions-iso
   virtualbox-guest-utils
-  gnome-tweak-tool
-  hfsprogs
-  libcurl4-openssl-dev
-  libxml2
-  libssl-dev
-  libxml2-dev
-  pinentry-curses
-  cmake
-  flatabulous-theme
-  ultra-flat-icons
-  clipit
+  xclip
+  xsel
+  zlib1g-dev
   zsh
 "
 
@@ -159,6 +167,9 @@ function install_ruby {
 	rm -rf $HOME/.pryrc
 	ln -s $DOTFILES_FOLDER/ruby/gemrc $HOME/.gemrc
 	ln -s $DOTFILES_FOLDER/ruby/pryrc $HOME/.pryrc
+
+	curl -sSL https://rvm.io/mpapis.asc | gpg2 --import -
+	curl -sSL https://get.rvm.io | bash
 }
 
 function install_inputrc {
