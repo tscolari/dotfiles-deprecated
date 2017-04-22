@@ -184,6 +184,7 @@ function install_tmux {
 	rm -rf $HOME/.tmux
 	ln -s $DOTFILES_FOLDER/tmux $HOME/.tmux
 	ln -s $HOME/.tmux/tmux.conf $HOME/.tmux.conf
+	sudo ln -s $(which tmux-next) /usr/local/bin/tmux
 }
 
 function install_vimlocal {

@@ -3,7 +3,6 @@ alias be="bundle exec"
 alias bes="bundle exec spec"
 
 # tmux
-alias tmux='tmux-next'
 alias tx='tmux'
 alias txa='tmux attach -t'
 alias txn='tmux new -s'
